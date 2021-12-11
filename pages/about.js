@@ -13,24 +13,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-// This function gets called at build time
-// export const getStaticProps = async () => {
-// 	// Call an external API endpoint to get posts
-// 	const getPosts = await fetch(
-// 		'http://localhost/reactwp/wp-json/wp/v2/posts?_embed'
-// 	);
-// 	const posts = await getPosts.json();
-
-// 	// By returning { props: { posts } }, the About component
-// 	// will receive `posts` as a prop at build time
-// 	return {
-// 		props: {
-// 			//posts: posts,
-// 			posts,
-// 		},
-// 	};
-// };
-
 export default function About({ posts }) {
 	return (
 		<>
@@ -179,7 +161,7 @@ export default function About({ posts }) {
 							NoSQL as the main focus.
 						</Typography>
 						<Typography variant='h5' component='h5' mt={3}>
-							JavaScript and NPM
+							JavaScript, NoSQL and NPM
 						</Typography>
 						<Typography component='p' mt={3}>
 							I started using JavaScript in my websites since 2009. Initially I
