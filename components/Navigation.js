@@ -17,11 +17,10 @@ const Navigation = () => {
 		});
 	}, []);
 
-	// ADD BODY CLASS TO HEADER WHEN SCROLLING
+	// ADD ACTIVE CLASS TO LINK WHEN CLICKED ON
 	const [active, setActive] = useState(true);
 	useEffect(() => {
 		const navigation = document.getElementById('navigation');
-
 		navigation.addEventListener('click', () => {
 			setActive(false);
 		});

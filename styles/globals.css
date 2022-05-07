@@ -85,11 +85,9 @@ nav ul {
 	padding: 0;
 	list-style-type: none;
 }
-.mx5 {
-	margin: 30px 0;
-}
+
 nav li.active a {
-	color: #1da1f2;
+	color: #039be5;
 	background: #f2f2f2;
 }
 nav li.active a::after {
@@ -100,7 +98,7 @@ nav li.active a::after {
 	height: 2px;
 	left: 0;
 	position: absolute;
-	background: #1da1f2;
+	background: #039be5;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 100%;
 }
@@ -117,7 +115,7 @@ nav a {
 }
 nav a:hover {
 	text-decoration: none;
-	color: #1da1f2;
+	color: #039be5;
 }
 nav a:after {
 	background: none repeat scroll 0 0 transparent;
@@ -127,16 +125,35 @@ nav a:after {
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: #1da1f2;
+	background: #039be5;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
+}
+.swiper {
+	max-height: 400px;
+}
+.parallax {
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 80px 0;
+	text-align: center;
+}
+.desk {
+	background-image: url('/images/banners/about-banner.jpg');
+}
+.business {
+	background-image: url('/images/banners/about-banner2.jpg');
 }
 nav a:hover:after {
 	width: 100%;
 	left: 0;
 }
 .content {
-	margin-top: 80px;
+	margin-top: 40px;
+}
+.MuiGrid-container {
+	align-items: center;
 }
 
 .logo h1 {
@@ -146,23 +163,60 @@ nav a:hover:after {
 	display: inline-block;
 }
 .logo h1 span {
-	color: #1da1f2;
+	color: #039be5;
 	font-weight: 600;
 }
 .logo h1:hover {
 	cursor: pointer;
+}
+.white {
+	color: #fff;
 }
 .darkbg {
 	padding: 50px 0;
 	background: #252c33;
 }
 .lightbg {
-	padding: 50px 0;
-	background: #eee;
+	padding: 20px 0;
+	background: #eeeeee;
+}
+.lightbg2 {
+	padding: 20px 0;
+	background: #e2e2e2;
+}
+.lightbg3 {
+	padding: 20px 0;
+	background: #dddddd;
+}
+.lightbg4 {
+	padding: 20px 0;
+	background: #d2d2d2;
+}
+.lightbg5 {
+	padding: 20px 0;
+	background: #cccccc;
 }
 .bluebg {
 	padding: 50px 0;
-	background: #1da1f2;
+	background: #039be5;
+}
+.stackImg {
+	border-radius: 50%;
+	padding: 3px;
+	border: 3px solid #fff;
+	width: 100%;
+	display: block;
+	margin: 0 auto 5px auto;
+}
+.center {
+	text-align: center;
+}
+
+.mx5 {
+	margin: 30px 0;
+}
+a {
+	color: #444;
 }
 @media screen and (min-width: 768px) {
 	#navigation {
@@ -187,11 +241,17 @@ nav a:hover:after {
 	header {
 		height: inherit;
 	}
+	.stackImg {
+		width: 80%;
+	}
+	.hidemobile {
+		display: block;
+	}
 }
 
 footer {
 	padding: 30px 0;
-	border-top: 2px solid #ddd;
+	border-top: 2px solid #e5e5e5;
 	margin-top: 20px;
 	width: 100%;
 	text-align: center;

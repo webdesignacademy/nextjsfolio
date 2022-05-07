@@ -1,7 +1,8 @@
+const d = new Date();
 const Footer = () => {
 	return (
 		<footer>
-			<p>Copyright | Brian Wiltshire | Portfolio</p>
+			<p>© Copyright {d.getFullYear()} | Brian Wiltshire | Portfolio</p>
 		</footer>
 	);
 };

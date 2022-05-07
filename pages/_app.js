@@ -2,9 +2,11 @@ import Layout from '../components/Layout';
 import 'nprogress/nprogress.css';
 import NProgress from 'nprogress';
 import Router from 'next/router';
+//ROBOTO FONT
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/500.css';
 import '../styles/globals.css';
+// MATERIAL UI THEME
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
 	palette: {
