@@ -21,17 +21,16 @@ import 'swiper/css/autoplay';
 // This function gets called at build time
 export const getStaticProps = async () => {
 	// Call an external API endpoint to get posts
-	const getPosts = await fetch('http://localhost/reactwp/wp-json/wp/v2/posts');
-	const posts = await getPosts.json();
-
+	//const getPosts = await fetch('http://localhost/reactwp/wp-json/wp/v2/posts');
+	//const posts = await getPosts.json();
 	// By returning { props: { posts } }, the About component
 	// will receive `posts` as a prop at build time
-	return {
-		props: {
-			//posts: posts,
-			posts,
-		},
-	};
+	//return {
+	//	props: {
+	//posts: posts,
+	//		posts,
+	//	},
+	//};
 };
 
 export default function About({ posts }) {
@@ -938,7 +937,7 @@ export default function About({ posts }) {
 						</Typography>
 					</section>
 
-					{posts.map((post) => (
+					{/* {posts.map((post) => (
 						<section key={post.id}>
 							<Typography variant='subtitle1' component='h3' mt={4}>
 								{post.title.rendered}
@@ -954,7 +953,7 @@ export default function About({ posts }) {
 
 							<Divider />
 						</section>
-					))}
+					))} */}
 				</Container>
 			</motion.div>
 		</>
